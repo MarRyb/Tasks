@@ -1,0 +1,48 @@
+ .header_of_form{
+ 	color: white;
+ 	background-color: darkblue;
+ 	text-align: start;
+ 	padding: 15px 20px;
+ 	margin-bottom: 40px;
+ 	font-size: 20px;
+ 	height: 35px;
+ }
+a{
+	color: red;
+	text-decoration: none;
+}
+.container_for_form{
+	width: 350px;
+	height: 400px;
+	margin: 150px auto 0 auto;
+	border: 1px solid grey;
+	border-radius: 6px;
+	text-align: center;
+}
+.input-text {
+	margin: 10px 10px 10px 10px;
+}
+.input-password {
+	margin-top: 10px;
+}
+ .input-text, .input-password {
+	text-align: start;
+	padding-left: 15px;
+	border: 1px solid grey;
+	border-radius: 4px;
+}
+ .input-text, .input-password, .input-submit{
+	width: 270px;
+	height: 50px; 
+	font-size: 18px; 
+	border-radius: 4px;
+ 
+}
+.input-submit{
+  margin: 20px 10px 30px 10px; 
+  color: white;
+  background-color: tomato;
+  border: none;
+  text-align: center;
+  }
+ 
