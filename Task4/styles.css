@@ -1,59 +1,86 @@
 @font-face {
       font-family: "SegoeUIRegular";
-      src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot");
-      src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix")format("embedded-opentype"),
-      url("../fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"),
-      url("../fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
+      src: url("./fonts/SegoeUIRegular/SegoeUIRegular.eot");
+      src: url("./fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix")format("embedded-opentype"),
+      url("./fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"),
+      url("./fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
   }
+   
  .container_for_form{
- 	font-family: 'SegoeUIRegular';
-	width: 420px;
+  width: 420px;
 	height: 454px;
 	margin: 0 auto 0 auto;
-	border: 1px solid grey;
-	border-radius: 6px;
+	border: 1px solid #d7d7d7;
+	border-radius: 5px;
 	text-align: center;
 }
- .header_of_form{
- 	width: 391px;
-    height: 45px;
-    color: #ffffff;
- 	background: linear-gradient(#4869a2, #5172a9);
- 	text-align: start;
+ .header_of_form {
+  font-family:'SegoeUIRegular', Optima, Roboto;
+  font-size: 22px;
+  width: 391px;
+  height: 50px;
+  color: #ffffff;
+  background: linear-gradient(#4869a2, #5172a9);
+  text-align: start;
  	padding-left: 29px;
- 	padding-top: 18px ;
- 	margin-bottom: 58px ;
- 	font-size: 22px;
+ 	padding-top: 10px ;
+ 	margin-bottom: 58px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
  }
+
 a{
-	color: red;
+	color: #f35b61;
 	text-decoration: none;
 }
 
 .input-text {
 	margin: 0px 30px 21px 30px;
+  position:relative;
 }
+.container_for_email::after {
+  content:"";
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 28px;
+  background: url(./images/email.svg);
+  top: 145px;
+  left: 425px;
+ }
 .input-password {
 	margin: 0px 30px 33px 30px;
+  position:relative;
+}
+.container_for_password::after{
+  content:"";
+  position: absolute;
+  display: block;
+  height: 29px;
+  width: 23px;
+  background: url(./images/locked.svg);
+  top: 222px;
+  left: 425px;
 }
  .input-text, .input-password {
  	width: 335px;
 	height: 55px;
 	text-align: start;
+  color: #a7a6a6;
 	padding-left: 25px;
-	border: 1px solid grey;
-	border-radius: 4px;
+	border: 1px solid #d7d7d7;
 	background-color: #f9f9f9;
 }
- .input-text, .input-password, .input-submit{
-	font-size: 18px; 
-	border-radius: 4px;}
-.input-text, .input-password, .footer_for_form{
-color: #a7a6a6;
+ .input-text, .input-password, .input-submit, .footer_for_form{
+  font-family: 'SegoeUIRegular', Optima, Roboto;
+  font-size: 18px;
+  line-height: 21px;
+ } 
+ .input-text, .input-password, .input-submit {
+	border-radius: 5px;
 }
-
 .input-submit{
   width: 360px;
   height: 57px;
@@ -65,8 +92,9 @@ color: #a7a6a6;
   }
   .footer_for_form{
   	width: 420px;
-  	height: 53px;
-  	padding-top: 7px;
+  	height: 58px;
+  	padding-top: 3px;
+    color: #929292;
   	background-color: #f3f3f3;
   }
- 
+  
