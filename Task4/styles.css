@@ -1,9 +1,8 @@
 @font-face {
       font-family: "SegoeUIRegular";
       src: url("./fonts/SegoeUIRegular/SegoeUIRegular.eot");
-      src: url("./fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix")format("embedded-opentype"),
-      url("./fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"),
-      url("./fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
+      src: url("./fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix")format("embedded-opentype");
+      src: url("./fonts/SegoeUIRegular/SegoeUIRegular.ttf")format("truetype");
       font-style: normal;
       font-weight: normal;
   }
@@ -17,52 +16,65 @@
 	text-align: center;
 }
  .header_of_form {
-  font-family:'SegoeUIRegular', Optima, Roboto;
+  font-family:'SegoeUIRegular', Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
   font-size: 22px;
-  width: 391px;
-  height: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 420px;
+  height: 60px;
   color: #ffffff;
   background: linear-gradient(#4869a2, #5172a9);
-  text-align: start;
- 	padding-left: 29px;
- 	padding-top: 10px ;
- 	margin-bottom: 58px;
+  margin-bottom: 58px;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
  }
+ .Sign_in {
+  display: flex;
+  width: 185px;
+  height: 50px;
+  padding-left: 25px;
+  padding-top: 10px;
+ }
+ .social_facebook, .social_twitter, .social__google {
+   width: 70px;
+   border-left: 1px solid #494c7c;
+   padding-top: 15px;
+}
 
+ 
 a{
 	color: #f35b61;
 	text-decoration: none;
 }
 
 .input-text {
-	margin: 0px 30px 21px 30px;
-  position:relative;
+	margin: 0px 30px 5px 30px;
+ 
 }
 .container_for_email::after {
   content:"";
-  position: absolute;
+  position:relative;
   display: block;
   height: 20px;
   width: 28px;
   background: url(./images/email.svg);
-  top: 145px;
-  left: 425px;
+  top: -45px;
+  left: 345px;
  }
 .input-password {
-	margin: 0px 30px 33px 30px;
+	margin: 0px 30px 3px 30px;
   position:relative;
 }
 .container_for_password::after{
   content:"";
-  position: absolute;
+  position: relative;
   display: block;
   height: 29px;
   width: 23px;
   background: url(./images/locked.svg);
-  top: 222px;
-  left: 425px;
+  top: -47px;
+  left: 345px;
 }
  .input-text, .input-password {
  	width: 335px;
@@ -74,7 +86,7 @@ a{
 	background-color: #f9f9f9;
 }
  .input-text, .input-password, .input-submit, .footer_for_form{
-  font-family: 'SegoeUIRegular', Optima, Roboto;
+  font-family: 'SegoeUIRegular', Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
  } 
